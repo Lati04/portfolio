@@ -76,7 +76,10 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>CV Attar Latifa</title>
+  <title>Portfolio Développeur web - Attar Latifa</title>
+  <meta name="Description" content="En tant que développeur Web, mon portfolio présente mes compétences en HTML, CSS, JavaScript
+  , PHP, Angular, Symfony, etc. Découvrez mes diplômes, mes différents prpjets, mes recommandations, et utilisez mon formulaire de 
+  contact pour me contacter.">
   <!--IE navigateur-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -93,6 +96,7 @@
 
 <body>
 
+<!--NavBar -->
 
   <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid">
@@ -129,8 +133,7 @@
     </div>
   </nav>
 
-
-
+<!--Section about me -->
   <section id="about" class="container-fluid p-5">
     <div class="row d-flex align-items-center justify-content-between m-5 p-5 content">
       <div class="col-md-6">
@@ -145,6 +148,7 @@
     </div>
   </section>
 
+<!--Section Compétences -->
   <section id="skills" class="m-5 pb-3">
    <div class="heading py-2 mb-3">
     <h2>Compétences</h2>
@@ -192,6 +196,7 @@
     </div>
    </section>
 
+<!--Section Expérience-->
    <section id="expérience" class="py-4 px-3 m-5">
       <div class="heading py-2 mb-3">
          <h2>Expérience Professionnelle</h2>
@@ -249,7 +254,8 @@
         </div>  
   </section>
 
-   <section id="formation" class="py-5 m-5">
+<!--Section Formation-->
+    <section id="formation" class="py-5 m-5">
       <div class="heading py-2 mb-3">
        <h2>Formation</h2>
       </div>
@@ -302,7 +308,8 @@
         </div>
       </div>
     </section>
-    
+
+<!--Section Portfolio -->
     <section id="portfolio" class="py-4 px-3 m-5">
         <div class="heading py-2 mb-3">
           <h2>portfolio</h2>
@@ -392,6 +399,7 @@
         </div>
     </section>
 
+<!--Section Recommandations -->
     <section id="recommendations" class="py-5 px-3 m-5">
         <div class="heading py-2 mb-3">
             <h2>recommandations</h2>
@@ -402,7 +410,7 @@
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner w-50 mx-auto">
+          <div class="carousel-inner w-50 mx-auto pt-2">
             <div class="carousel-item active" >
               <h3>"Bon Travail"</h3>
               <h4>Mon Formateur</h4>
@@ -419,6 +427,7 @@
         </div>
       </section>
 
+<!--Section Contact -->
       <section id="contact" class="p-5 m-5">
         <div class="heading py-2 mb-5">
           <h2>Contactez-moi</h2>
@@ -426,7 +435,7 @@
 
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+            <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>#contact">
 
               <div class="row">
                 <div class="col-md-6 p-3">
@@ -486,8 +495,8 @@
           </div>
         </div>
       </section>
-
-
+      
+<!--Footer-->
 <footer class="text-center py-3">
       <a href="#about"><svg xmlns="http://www.w3.org/2000/svg" width="53" height="33" fill="currentColor" class="bi bi-chevron-bar-up" viewBox="0 0 16 16">
        <path fill-rule="evenodd" d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zM2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4z"/>

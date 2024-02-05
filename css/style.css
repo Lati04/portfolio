@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6{
 #about h3, #recommendations h3{
       color:  rgb(252, 73, 73);
 }
+
 /*NAVBAR*/
 .navbar{
       background-color: #000;
@@ -151,6 +152,7 @@ figcaption{
      font-weight: bold;
      text-decoration: none;
 }
+
 /*FORMATION*/
 #formation .heading h2{
       color: #3a4b48;
@@ -185,6 +187,7 @@ figcaption{
      
       box-shadow: 0 0 5px #fff
 }
+
 /*CONTACTEZ-MOI*/
 #contact{
      background:  #3a4b48;
@@ -221,6 +224,7 @@ form .btn:hover{
      text-align: center;
      color: #fff;
 }
+
 /*FOOTER*/
 footer{
       background-color: #333;
