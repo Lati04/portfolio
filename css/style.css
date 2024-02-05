@@ -1,0 +1,237 @@
+/*GENERAL*/
+body{
+     font-family: Arial, Helvetica, sans-serif;
+     background: linear-gradient(to left,  #333,   #000); 
+      
+}
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+     font-weight: bold;
+}
+#about h3, #recommendations h3{
+      color:  rgb(252, 73, 73);
+}
+/*NAVBAR*/
+.navbar{
+      background-color: #000;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: bold;
+      box-shadow: 0 0 8px #fff;
+}
+.navbar-nav{
+     margin: auto;
+     text-align: center;
+     background-color: #000;
+}
+.nav-link{
+      background-color: #000;
+      font-weight: bold;
+      box-shadow: 0 0 8px #fff;
+}
+.nav-link.active{ 
+     background-color: #000;
+     font-weight: bold;
+}
+.nav-link:hover{ 
+     background-color:  rgb(252, 73, 73);
+     color: #000 !important;
+     font-weight: bold;
+     box-shadow: none;
+}
+.navbar a:hover{
+      color:  rgb(252, 73, 73);
+}
+
+/*ABOUT*/
+.content{
+     position: relative;
+     overflow: hidden;
+     box-shadow: 
+     0 0 10vw #000,
+     0 0 2vw 0.4vw #3a4b48,
+     inset 0 0 .5vw .2vw #3a4b48;
+}
+.content::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image:  url(../img/bgportfolio.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     opacity: 0.8;
+     border-radius: 450px 10px;
+     animation: beam-animation 5s infinite;
+}
+@keyframes beam-animation{
+     0%{
+          transform: scale(0);
+     }
+     50%{
+          transform: scale(1.5);
+     }
+     100%{
+          opacity: 0;
+          transform: scale(2);
+     }
+}
+.image{
+      max-width: 50%;
+      height: auto;
+      box-shadow: 
+      0 0 10vw #ccc,
+      0 0 2vw 0.4vw #3a4b48,
+      inset 0 0 .5vw .2vw #3a4b48;
+}
+section .heading{
+      text-align: center;
+      background: linear-gradient(to right,  #ffffff,   #3a4b48);
+      box-shadow: 0 0 5px #fff;
+}
+section .heading h2{
+      text-transform: uppercase;
+}
+
+/*SKILLS*/
+#skills .heading h2{
+      color:  #3a4b48;;
+}
+#skills .progress{
+      height: 40px;
+}
+
+#skills .progress-bar{
+      background-color:  rgb(252, 73, 73);
+}
+#skills .progress-bar h5{
+      text-shadow: 1px 1px 1px #000;
+}
+
+/*EXPERIANCE*/
+#expérience {
+     background:  #3a4b48;
+     box-shadow: 0 0 5px #fff
+}
+#expérience .heading h2{
+      color: #fff;
+}
+
+#expérience .expérience-block, .expérience-block1{
+      border: 1px solid #f1ededf1;
+      border-radius: 5px;
+      background-color: #f1ededf1;
+}
+.deux-colonnes{
+          font-size: 14px;
+       -webkit-columns: 2;
+          -moz-columns: 2;
+               columns: 2;
+}
+figcaption{
+      text-align: center;
+      font-size: 10px;
+      font-style: italic;
+      font-weight: bold;
+}
+#expérience .expérience-block1{
+     text-align: center;
+}
+.button{
+     background: linear-gradient(to left,  #ffffff,   #3a4b48);
+     color: #000;
+     text-transform: uppercase;
+     font-weight: bold;
+     text-decoration: none;
+}
+/*FORMATION*/
+#formation .heading h2{
+      color: #3a4b48;
+}
+#formation .formation-block{
+     text-align: center;
+     background: linear-gradient(to right,  #fff,   #ccc);
+     box-shadow: 0 0 5px 3px #fff;
+   
+}
+#formation .formation-block h4{
+      color:  rgb(252, 73, 73)
+}
+  
+/*PORTFOLIO*/
+#portfolio{
+      background:  #3a4b48;
+      box-shadow: 0 0 5px #fff
+}
+#portfolio .heading h2{
+      color: #fff;
+}
+
+/*RECOMMENDATION*/
+#recommendations .heading h2{
+      color:  #3a4b48;;
+}
+.carousel-inner h4{
+      color:  #fff;
+}
+.carousel-inner{
+     
+      box-shadow: 0 0 5px #fff
+}
+/*CONTACTEZ-MOI*/
+#contact{
+     background:  #3a4b48;
+     box-shadow: 0 0 5px #fff
+}
+#contact .heading h2{
+      color: #fff;
+}
+#contact-form{
+       font-size: 16px;
+       border-radius: 10px;
+       color: #fff;
+}
+form .blue{
+        color: #f00;
+}
+form .form-control{
+       height: 50px;
+       font-size: 16px;
+}
+form .btn{
+     text-transform: uppercase;
+     font-weight: bold;
+}
+form .btn:hover{
+      background-color: #f00;
+     }
+.comments{
+     color: #f00;
+     font-size: 12px;
+}
+.thank-you{
+     font-size: 16px;
+     text-align: center;
+     color: #fff;
+}
+/*FOOTER*/
+footer{
+      background-color: #333;
+      box-shadow: 0 0 8px #fff;
+}
+a {
+      color: red;
+}
+a:hover{
+      color: #fff;
+}
+footer h5, .copy{
+     color: #fff;
+}

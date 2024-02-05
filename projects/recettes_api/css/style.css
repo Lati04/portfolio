@@ -1,0 +1,62 @@
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to left,  #44223f,   #d1cb9a);  
+}
+.container{
+    width: 80%;
+    background-color: hsla(54, 27%, 47%, 0.25);
+    box-shadow: 0px 5px 5px #726c48;
+    border-radius: 50px 0;
+    background: url(../image/recipe-1.jpg) no-repeat center;
+    background-size: cover;
+}
+/*TITRAILLE*/
+.heading{
+    text-align: center;
+    font-weight: bold;
+    color: #44223f;
+    box-shadow: 0px 5px 5px #726c48;
+    border-radius: 20px 0;
+}
+/*FORMULAIRE*/
+#form-recette{
+    font-size: 20px;
+    border-radius: 50px 0;
+    box-shadow: 0px 5px 5px #726c48;
+    background-color: hsla(302, 32%, 30%, 0.35);
+    padding: 20px;
+    margin: 25px 0;
+ }
+.form-control{
+    font-size: 18px;
+    border: none;
+    border-radius: 20px 0;
+    box-shadow: 0px 5px 5px #726c48;
+}
+.form-label{
+    font-weight: bold;
+    color: #ffffff;
+    
+}
+.button{
+    border: none;
+    border-radius: 20px 0;
+    background-color: #d1cb9a;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*RESPONSE CARD*/
+.card{
+    border-radius: 40px 0;
+    font-size: 13px;
+    font-weight: bold;
+    background: #d1cb9a;  
+    box-shadow: 0px 5px 5px #44223f;
+}

@@ -1,0 +1,48 @@
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    background: url(../image/school.jpg) no-repeat center fixed;
+    background-size: cover;
+    box-shadow: 0px 8px 8px #01bb8a;
+    border-radius: 20px;
+}
+.container{
+    width: 85%;
+    background-color: hsla(358, 28%, 95%, 0.65);
+}
+/*TITRAILLE*/
+.title{
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff0000;
+    text-shadow: 0px 5px 5px #01bb8a;
+    background: url(../image/logo.jpg) no-repeat left;
+ }
+.subtitle{
+    font-size: 24px;
+    font-weight: bold;
+    background: url(../image/sport.jpg) no-repeat right;
+}
+/*Affichage image*/
+.school{
+    background: url(../image/pupil.jpg) no-repeat right;
+}
+.school1{
+    background: url(../image/school1.jpg) no-repeat right;
+}
+.activity{
+    background: url(../image/activity.jpg) no-repeat right;
+}
+/*Affichage tableau*/
+.table, .title{
+    box-shadow: 0px 8px 8px #01bb8a;
+    border-radius: 20px;
+}
