@@ -101,7 +101,6 @@
 
   <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" 
       aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -269,7 +268,7 @@
           </li>
         </ul>
         <div class="d-flex align-items-center justify-content-center">
-           <a href="doc/CvAl.pdf"  class="btn btn-danger">Télecharger cv</a>
+           <a tabindex="8" href="doc/CvAl.pdf"  class="button p-3">Télecharger cv</a>
         </div> 
     </div>
   </section>
@@ -336,9 +335,9 @@
               <div class="card-body">
                 <h5 class="card-title">JS-se perfectionner- projet n°1</h5>
                 <div class="d-flex justify-content-around flex-wrap">
-                  <a href="./projects/JS02-01-267776-Attar-Latifa/NoteMusicJs/consigne/Se-perfectionner-en-javaScript-devoir1.pdf" 
+                  <a tabindex="9" href="./projects/JS02-01-267776-Attar-Latifa/NoteMusicJs/consigne/Se-perfectionner-en-javaScript-devoir1.pdf" 
                   class="button p-2 mb-2">Consigne</a>
-                  <a href="./projects/JS02-01-267776-Attar-Latifa/NoteMusicJs/index.html" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="10" href="./projects/JS02-01-267776-Attar-Latifa/NoteMusicJs/index.html" class="button p-2 mb-2">Mon projet</a>
                 </div>
               
               </div>
@@ -350,8 +349,8 @@
               <div class="card-body">
                 <h5 class="card-title">JS-se perfectionner- projet n°2</h5>
                 <div class="d-flex justify-content-around flex-wrap">
-                  <a href="./projects/JS02-02-267776-Attar-Latifa/consigne/Se-perfectionner-en-javaScript-devoir2.pdf" class="button p-2 mb-2">Consigne</a>
-                  <a href="./projects/JS02-02-267776-Attar-Latifa/NoteMusicDemande1/index.php" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="11" href="./projects/JS02-02-267776-Attar-Latifa/consigne/Se-perfectionner-en-javaScript-devoir2.pdf" class="button p-2 mb-2">Consigne</a>
+                  <a tabindex="12" href="./projects/JS02-02-267776-Attar-Latifa/NoteMusicDemande1/index.php" class="button p-2 mb-2">Mon projet</a>
                 </div>   
               </div>
             </div>
@@ -363,9 +362,9 @@
               <div class="card-body">
                 <h5 class="card-title">PHP-expert-projet n°1</h5>
                 <div class="d-flex justify-content-around flex-wrap">
-                  <a href="./projects/PHP-ex-01-267776-Attar-Latifa/schoolPupilSport/consigne/php-expert-devoir1.pdf" 
+                  <a tabindex="13" href="./projects/PHP-ex-01-267776-Attar-Latifa/schoolPupilSport/consigne/php-expert-devoir1.pdf" 
                   class="button p-2 mb-2">Consigne</a>
-                  <a href="./projects/PHP-ex-01-267776-Attar-Latifa/schoolPupilSport/index.php" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="14" href="./projects/PHP-ex-01-267776-Attar-Latifa/schoolPupilSport/index.php" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
@@ -377,9 +376,9 @@
               <div class="card-body">
                 <h5 class="card-title">PHP-expert-projet n°2</h5>
                 <div class="d-flex justify-content-around flex-wrap">
-                  <a href="./projects/PHP-ex-02-267776-Attar-Latifa//ApplicationBooking/consigne/php-expert-devoir2.pdf" 
+                  <a tabindex="15" href="./projects/PHP-ex-02-267776-Attar-Latifa//ApplicationBooking/consigne/php-expert-devoir2.pdf" 
                   class="button p-2 mb-2">Consigne</a>
-                  <a href="./projects/PHP-ex-02-267776-Attar-Latifa/ApplicationBooking/index.php" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="16" href="./projects/PHP-ex-02-267776-Attar-Latifa/ApplicationBooking/index.php" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
@@ -391,8 +390,8 @@
               <div class="card-body">
                 <h5 class="card-title">Créer une application Angular</h5>
                 <div class="d-flex justify-content-around flex-wrap">
-                  <a href="./projects/myAngularApp/consigne/application-angular.pdf" class="button p-2 mb-2">Consigne</a>
-                  <a href="./projects/myAngularApp/src/app/" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="17" href="./projects/myAngularApp/consigne/application-angular.pdf" class="button p-2 mb-2">Consigne</a>
+                  <a tabindex="18" href="./projects/myAngularApp/src/app/" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
@@ -404,8 +403,8 @@
               <div class="card-body">
                 <h5 class="card-title">Dévelloper une API</h5>
                 <div class="d-flex justify-content-around flex-wrap">
-                  <a href="./projects/recettes_api/consigne/developper-api.pdf" class="button p-2 mb-2">Consigne</a>
-                  <a href="./projects/recettes_api/index.php" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="19" href="./projects/recettes_api/consigne/developper-api.pdf" class="button p-2 mb-2">Consigne</a>
+                  <a tabindex="20" href="./projects/recettes_api/index.php" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
@@ -457,14 +456,14 @@
               <div class="row">
                 <div class="col-md-6 p-3">
                   <label for="firstname">Prénom<span class="blue"> *</span> </label>
-                  <input tabindex="8" name="firstname" id="firstname"  type="text" class="form-control" placeholder="Prénom" aria-label="Prénom" 
+                  <input tabindex="21" name="firstname" id="firstname"  type="text" class="form-control" placeholder="Prénom" aria-label="Prénom" 
                   value="<?php echo $firstname; ?>">
                   <p class="comments mt-2"><?php echo $firstnameError; ?></p>
                 </div>
 
                 <div class="col-md-6 p-3">
                   <label for="name">Nom<span class="blue"> *</span> </label>
-                  <input tabindex="9" name="name" id="name" type="text" class="form-control" autocomplete="family-name" placeholder="Nom de famille" aria-label="Nom de famille"
+                  <input tabindex="22" name="name" id="name" type="text" class="form-control" autocomplete="family-name" placeholder="Nom de famille" aria-label="Nom de famille"
                   value="<?php echo $name; ?>">
                   <p class="comments mt-2"><?php echo $nameError; ?></p>
                 </div>
@@ -474,7 +473,7 @@
                 <div class="col-md-6 p-3">
                       <div class="mb-3">
                           <label for="email" class="form-label">Address email<span class="blue"> *</span></label>
-                          <input tabindex="10" name="email" id="email" type="email" autocomplete="off" class="form-control" placeholder="name@example.com" 
+                          <input tabindex="23" name="email" id="email" type="email" autocomplete="off" class="form-control" placeholder="name@example.com" 
                           aria-label="Adresse mail" value="<?php echo $email; ?>">
                           <p class="comments mt-2"><?php echo $emailError; ?></p>
                       </div>
@@ -483,7 +482,7 @@
                 <div class="col-md-6 p-3">
                       <div class="mb-3">
                           <label for="phone" class="form-label">Télephone</label>
-                          <input tabindex="11" name="phone" id="phone" type="tel" autocomplete="off" class="form-control" placeholder="télephone" aria-label="Télephone"
+                          <input tabindex="24" name="phone" id="phone" type="tel" autocomplete="off" class="form-control" placeholder="télephone" aria-label="Télephone"
                           value="<?php echo $phone; ?>">
                           <p class="comments mt-2"><?php echo $phoneError; ?></p>
                       </div>
@@ -493,7 +492,7 @@
               <div class="col-md-12">
                     <div class="mb-3">
                       <label for="message" class="form-label">Message<span class="blue"> *</label>
-                      <textarea tabindex="12" class="form-control" id="message" name="message" rows="5" <?php echo $message; ?> ></textarea>
+                      <textarea tabindex="25" class="form-control" id="message" name="message" rows="5" <?php echo $message; ?> ></textarea>
                       <p class="comments mt-2"><?php echo $messageError; ?></p>
                     </div>
               </div>
@@ -502,9 +501,8 @@
                       <p class="blue"><strong>* Ces informations sont requises</strong></p>
               </div>
 
-
               <div class="d-flex align-items-center justify-content-center p-2">
-                     <button tabindex="13" type="submit" class="btn btn-danger px-5">Envoyer</button>
+                     <button tabindex="26" type="submit" class="button py-3 px-5">Envoyer</button>
               </div>
               
               <p class="thank-you mt-3" style="display:<?php if($isSuccess) echo 'block'; else echo 'none';?>">Votre message a bien été envoyé. Merci d'avoir pris contact !</p>
@@ -515,7 +513,7 @@
       
 <!--Footer-->
 <footer class="text-center py-3">
-      <a href="#about">
+      <a tabindex="27" href="#about">
         <span class="bi bi-chevron-double-up p-1"></span></a>
      <h5 class="mt-3">Haut de la page</h5>
      <p class="copy">&copy; 2024-Latifa Attar</p>
