@@ -33,11 +33,11 @@ generateMenu('index.php', '', './Acces/Reservations.php');
     <h1 class="heading fig p-3 m-4">Application Booking</h1>
 </div>
 
-<div class="container my-5 p-5">
-    <div class="card p-5 text-center" style="width: 36rem;">
-        <img src="./Image/appli.jpg" class="card-img" alt="...">
-        <div class="card-body-1 p-2">
-            <a href="./Acces/ListesDesHotels.php" class="btn btn-success">Listes des hotels</a>
+<div class="container-fluid h-100 p-3 my-5">
+<div class="card w-50 text-center">
+        <img src="./Image/appli.jpg" class="card-img img-fluid" alt="hotel">
+        <div class="card-body-1 p-3">
+            <a href="./Acces/ListesDesHotels.php" class="btn btn-success m-2">Listes des hotels</a>
         </div>
     </div>
 </div> 

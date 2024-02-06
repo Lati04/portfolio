@@ -1,8 +1,7 @@
-/*GENERAL*/
+/********************************** GENERAL ****************************************/
 body{
      font-family: Arial, Helvetica, sans-serif;
      background: linear-gradient(to left,  #333,   #000); 
-      
 }
 *{
       margin: 0;
@@ -12,11 +11,35 @@ body{
 h1, h2, h3, h4, h5, h6{
      font-weight: bold;
 }
-#about h3, #recommendations h3{
+#about h3, #expérience h3, #recommendations h3{
       color:  rgb(252, 73, 73);
 }
+ul{
+      list-style: none;
+}
+.divider{
+      border: 1px solid #fff;
+   
+      width: 150px;
+}
+.content, #formation .formation-block, .timeline li .timeline-badge, .projet, .carousel-inner, .timeline-panel, #contact{
+      box-shadow: 
+      0 0 5vw #000,
+      0 0 1vw 0.1vw #fff,
+      inset 0 0 .5vw .1vw #fff;
+}
+section .heading, #formation .formation-block{
+      text-align: center;
+      background: linear-gradient(to right,  #333,   #000);
+   
+}
+section .heading h2{
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 2px 2px 1px #f00;
+}
 
-/*NAVBAR*/
+/************************************ NAVBAR**********************************/
 .navbar{
       background-color: #000;
       letter-spacing: 2px;
@@ -48,14 +71,10 @@ h1, h2, h3, h4, h5, h6{
       color:  rgb(252, 73, 73);
 }
 
-/*ABOUT*/
+/************************************ ABOUT *******************************/
 .content{
      position: relative;
      overflow: hidden;
-     box-shadow: 
-     0 0 10vw #000,
-     0 0 2vw 0.4vw #3a4b48,
-     inset 0 0 .5vw .2vw #3a4b48;
 }
 .content::before{
      content: "";
@@ -69,7 +88,7 @@ h1, h2, h3, h4, h5, h6{
      background-size: cover;
      background-position: center;
      opacity: 0.8;
-     border-radius: 450px 10px;
+     border-radius: 50%;
      animation: beam-animation 5s infinite;
 }
 @keyframes beam-animation{
@@ -85,56 +104,107 @@ h1, h2, h3, h4, h5, h6{
      }
 }
 .image{
-      max-width: 50%;
-      height: auto;
       box-shadow: 
       0 0 10vw #ccc,
       0 0 2vw 0.4vw #3a4b48,
       inset 0 0 .5vw .2vw #3a4b48;
 }
-section .heading{
-      text-align: center;
-      background: linear-gradient(to right,  #ffffff,   #3a4b48);
-      box-shadow: 0 0 5px #fff;
-}
-section .heading h2{
-      text-transform: uppercase;
-}
 
-/*SKILLS*/
-#skills .heading h2{
-      color:  #3a4b48;;
-}
+/**************************************** SKILLS **************************************/
 #skills .progress{
       height: 40px;
 }
 
 #skills .progress-bar{
-      background-color:  rgb(252, 73, 73);
+      background: radial-gradient(closest-side,#f00, #ebf8e1, rgb(252, 73, 73));
+      /* background-color:  rgb(252, 73, 73); */
 }
 #skills .progress-bar h5{
-      text-shadow: 1px 1px 1px #000;
+      text-shadow: 1px 1px 1px #fff;
+      color: #000;
 }
 
-/*EXPERIANCE*/
-#expérience {
-     background:  #3a4b48;
-     box-shadow: 0 0 5px #fff
-}
+/************************************** EXPERIANCE ***********************************/
 #expérience .heading h2{
       color: #fff;
 }
-
-#expérience .expérience-block, .expérience-block1{
-      border: 1px solid #f1ededf1;
-      border-radius: 5px;
-      background-color: #f1ededf1;
+.timeline{
+    position: relative;
 }
-.deux-colonnes{
-          font-size: 14px;
-       -webkit-columns: 2;
-          -moz-columns: 2;
-               columns: 2;
+.timeline:before{
+      content: '';
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      width: 5px;
+      background-color: #fff;
+      left: 50%;
+      margin-left: -2.5px;
+}
+.timeline > li {
+      position: relative;
+}
+.timeline > li:before, .timeline > li:after{
+      content: '';
+      display: table;
+}
+.timeline > li:after{
+      clear: both;
+}
+.timeline li .timeline-badge{
+      color: #fff;
+      width: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      text-align: center;
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      margin-left: -25px;
+      background: linear-gradient(to right,  #333,   #000);
+      border-radius: 50%;
+}
+.timeline-panel-container{
+      width: 50%;
+      float: left;
+}
+.timeline-panel-container-inverted{
+      width: 50%;
+      float: right;
+}
+.timeline-panel{
+      width: 100%;
+      float: right;
+      font-size: 13px;
+      margin-right: 40px;
+      border-radius: 7px;
+      position: relative;
+      color: #fff;
+}
+.timeline-panel-container-inverted .timeline-panel{
+      float: left;
+      margin-left: 40px;
+     
+}
+.timeline-panel:after{
+      position: absolute;
+      top: 27px;
+      right: -14px;
+      display: inline-block;
+      border-top: 14px solid transparent;
+      border-left: 14px solid #ccc;
+      border-right: 0 solid #ccc;
+      border-bottom: 14px solid transparent;
+      content: '';
+}
+.timeline-panel-container-inverted .timeline-panel:after{
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+}
+.text-muted, .text-muted span{
+      color: #fff;
 }
 figcaption{
       text-align: center;
@@ -142,60 +212,36 @@ figcaption{
       font-style: italic;
       font-weight: bold;
 }
-#expérience .expérience-block1{
-     text-align: center;
-}
-.button{
-     background: linear-gradient(to left,  #ffffff,   #3a4b48);
-     color: #000;
-     text-transform: uppercase;
-     font-weight: bold;
-     text-decoration: none;
-}
 
-/*FORMATION*/
-#formation .heading h2{
-      color: #3a4b48;
-}
-#formation .formation-block{
-     text-align: center;
-     background: linear-gradient(to right,  #fff,   #ccc);
-     box-shadow: 0 0 5px 3px #fff;
-   
+/************************************* FORMATION *******************************/
+#formation h3, #formation h5 {
+     color: #fff;
 }
 #formation .formation-block h4{
       color:  rgb(252, 73, 73)
 }
-  
-/*PORTFOLIO*/
-#portfolio{
-      background:  #3a4b48;
-      box-shadow: 0 0 5px #fff
-}
-#portfolio .heading h2{
-      color: #fff;
+.badge span{
+      box-shadow: 0 0 5px #fff;
+      font-size: 30px;
 }
 
-/*RECOMMENDATION*/
-#recommendations .heading h2{
-      color:  #3a4b48;;
-}
+/************************************* PORTFOLIO ********************************/
+.button{
+      background: #f00;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 
+      inset 0 0 .3vw .1vw #fff;
+ }
+
+/************************************* RECOMMENDATION *****************************/
 .carousel-inner h4{
       color:  #fff;
 }
-.carousel-inner{
-     
-      box-shadow: 0 0 5px #fff
-}
 
-/*CONTACTEZ-MOI*/
-#contact{
-     background:  #3a4b48;
-     box-shadow: 0 0 5px #fff
-}
-#contact .heading h2{
-      color: #fff;
-}
+/************************************** CONTACTEZ-MOI ******************************/
 #contact-form{
        font-size: 16px;
        border-radius: 10px;
@@ -225,10 +271,14 @@ form .btn:hover{
      color: #fff;
 }
 
-/*FOOTER*/
+/**************************************** FOOTER *********************************/
 footer{
       background-color: #333;
       box-shadow: 0 0 8px #fff;
+}
+footer span{
+      box-shadow: 0 0 5px red;
+      font-size: 30px;
 }
 a {
       color: red;

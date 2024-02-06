@@ -89,6 +89,7 @@
   <!--CDN Bootstrap.css-->
  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   
   <!--css-->
   <link rel="stylesheet" href="css/style.css">
@@ -134,139 +135,157 @@
   </nav>
 
 <!--Section about me -->
-  <section id="about" class="container-fluid p-5">
-    <div class="row d-flex align-items-center justify-content-between m-5 p-5 content">
-      <div class="col-md-6">
-        <div class="heading">
+  <section id="about" class="container-fluid py-5">
+    <div class="d-flex align-items-center justify-content-around mx-auto m-5 p-5 content">
+        <div class="heading p-2 me-2">
           <h2>Bonjour, Je suis Latifa</h2>
           <h3>Développeur Web</h3>
         </div>
-      </div>
-      <div class="col-md-5 d-flex justify-content-center">
-        <img src="img/ma-photo.jpg" alt="ma-photo" class="image">
-      </div>
+        <div class="col-8 col-lg-2 image text-align-center">
+          <img src="img/ma-photo.jpg" alt="ma-photo" class="img-fluid">
+        </div>
     </div>
   </section>
+  <div class="divider mx-auto mb-5"></div>
 
 <!--Section Compétences -->
   <section id="skills" class="m-5 pb-3">
    <div class="heading py-2 mb-3">
     <h2>Compétences</h2>
    </div>
+
    <div class="container">
     <div class="row m-5">
 
       <div class="col-lg-6">
-          <div class="progress m-4">
-             <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-             <h5 class="m-3">HTML 100%</h5>
+          <div class="progress mb-3">
+             <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+             <h5>HTML 100%</h5>
              </div>
           </div>
-          <div class="progress m-4">
-             <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-             <h5 class="m-3">CSS 100%</h5>
+          <div class="progress mb-3">
+             <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+             <h5>CSS 100%</h5>
              </div>
           </div>
-          <div class="progress m-4">
-             <div class="progress-bar w-95" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress mb-3">
+             <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="95">
              <h5 class="m-3">JAVASCRIPT 95%</h5>
              </div>
           </div>
       </div>
 
       <div class="col-lg-6">
-         <div class="progress m-4">
-            <div class="progress-bar w-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              <h5 class="m-3">ANGULAR 80%</h5>
-            </div>
-         </div>
-          <div class="progress m-4">
-            <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-            <h5 class="m-3">BOOTSRTAP 100%</h5>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80">
+              <h5>ANGULAR 80%</h5>
             </div>
           </div>
-          <div class="progress m-4">
-            <div class="progress-bar w-85" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-              <h5 class="m-3">Symfony 85%</h5>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" style="width: 100%;" aria-valuemin="0" aria-valuemax="100">
+            <h5>BOOTSRTAP 100%</h5>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="85">
+              <h5>SYMFONY 85%</h5>
             </div>
           </div>
       </div>
-
      </div>
     </div>
    </section>
+   <div class="divider mx-auto mt-5"></div>
 
 <!--Section Expérience-->
-   <section id="expérience" class="py-4 px-3 m-5">
-      <div class="heading py-2 mb-3">
+   <section id="expérience" class="py-4 m-5">
+    <div class="heading py-2 mb-5">
          <h2>Expérience Professionnelle</h2>
-      </div>
+    </div>
 
-      </div>
-          <div class="expérience-block p-3 m-5 deux-colonnes">
-
-          <div class="clearfix">
-            <figure class="col-md-4 float-md-start me-md-3">
-              <img src="img/image-ide.jpg" class="img-fluid" alt="ide">
-              <figcaption>Infirmière Diplomée d'Etat</figcaption>
-            </figure>
-            
-            <p>
-            Ayant acquis une solide expérience dans le domaine de la santé en tant qu’infirmière 
+    <div class="container">
+      <ul class="timeline p-2">
+        <li>
+          <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
+          <div class="timeline-panel-container">
+            <div class="timeline-panel p-2">
+              <div class="timeline-heading">
+                <h3>Infirmière Diplomée d'Etat</h3>
+                <p class="text-muted"><span class="bi-clock-fill"> 2003-2022</span></p>
+              </div>
+              <div class="timeline-body">
+              <div class="clearfix">
+                <figure class="col-md-4 float-md-start me-md-3">
+                  <img src="img/image-ide.jpg" class="img-fluid" alt="ide">
+                  <figcaption>Infirmière Diplomée d'Etat</figcaption>
+                </figure>
+                <p>Ayant acquis une solide expérience dans le domaine de la santé en tant qu’infirmière 
                 diplômée d'État me conférant ainsi une vision unique et précieuse en tant que futur 
                 développeur web.Je suis prête à mettre à profit mes compétences relationnelles, ma 
                 capacité d'adaptation, ma rigueur et mon sens de l'organisation pour créer des 
-                solutions technologiques innovantes et centrées sur les besoins des utilisateurs.
-            </p>
-            <p>
-            Je suis enthousiaste à l'idée d'apporter une approche holistique à mes projets de 
+                solutions technologiques innovantes et centrées sur les besoins des utilisateurs.</p>
+                <p>Je suis enthousiaste à l'idée d'apporter une approche holistique à mes projets de 
                 développement, en tirant parti des connaissances et des compétences acquises lors de
-                mon expérience en tant que infirmière.
-            </p>
-          </div>
-          <div class="clearfix">
-            <figure class="col-md-4 float-md-end">
-              <img src="img/image-dev-web.png" class="img-fluid" alt="développeur">
-              <figcaption>Développeur</figcaption>
-            </figure>
-            
-            <p>
-            Je souhaite désormais orienter ma carrière vers le domaine du développement web, 
-                une nouvelle passion que j'ai développée au cours de ma formation de Développeur 
-                Web à l'ESECAD-GROUP SKILL&YOU .
-                Au cours de cette formation, j'ai acquis des compétences en langages de programmation 
-                tels que HTML, CSS, PHP et JavaScript.
-                J'ai appris à créer des interfaces utilisateur attrayantes et fonctionnelles en utilisant 
-                HTML pour la structure, CSS pour le style et JavaScript pour l’interactivité. Je suis 
-                capable de développer des sites web responsives et d'assurer leur compatibilité avec 
-                différents navigateurs et appareils, en utilisant également diférents framework tels que
-                Bootstrap, Angular, Symfony.
-                Grâce à ma formation, je suis en mesure de développer des interfaces utilisateur web 
-                dynamiques, d'utiliser des CMS ou des plates-formes e-commerce, de gérer des bases
-                de données. De plus, j'ai des connaissances en SEO et en gestion de projet web, ainsi 
-                qu'une capacité à effectuer une veille technologique pour rester à jour avec les 
-                dernières avancées du secteur.
-            </p>
-            <div class="d-flex align-items-center justify-content-center">
-                <a href="doc/CvAl.pdf"  class="btn btn-danger">Télecharger cv</a>
+                mon expérience en tant que infirmière.</p>
               </div>
+              </div>
+            </div>
           </div>
-        </div>  
+            
+        </li>
+        <li>
+          <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
+            <div class="timeline-panel-container-inverted">
+              <div class="timeline-panel p-2">
+                <div class="timeline-heading">
+                  <h3>Développeur Web</h3>
+                  <p class="text-muted"><span class="bi-clock-fill"> 2022-2024</span></p>
+                </div>
+                <div class="timeline-body">
+                <div class="clearfix">
+                  <figure class="col-md-4 float-md-end ms-md-3">
+                    <img src="img/image-dev-web.png" class="img-fluid" alt="développeur">
+                    <figcaption>Développeur Web</figcaption>
+                  </figure>
+                  <p>Je souhaite désormais orienter ma carrière vers le domaine du développement web, 
+                  une nouvelle passion que j'ai développée au cours de ma formation de Développeur 
+                  Web à l'ESECAD-GROUP SKILL&YOU .
+                  Au cours de cette formation, j'ai acquis des compétences en langages de programmation 
+                  tels que HTML, CSS, PHP et JavaScript.
+                  J'ai appris à créer des interfaces utilisateur attrayantes et fonctionnelles en utilisant 
+                  HTML pour la structure, CSS pour le style et JavaScript pour l’interactivité. Je suis 
+                  capable de développer des sites web responsives et d'assurer leur compatibilité avec 
+                  différents navigateurs et appareils, en utilisant également diférents framework tels que
+                  Bootstrap, Angular, Symfony.</p>
+                  <p> Grâce à ma formation, je suis en mesure de développer des interfaces utilisateur web 
+                  dynamiques, d'utiliser des CMS ou des plates-formes e-commerce, de gérer des bases
+                  de données. De plus, j'ai des connaissances en SEO et en gestion de projet web, ainsi 
+                  qu'une capacité à effectuer une veille technologique pour rester à jour avec les 
+                  dernières avancées du secteur.</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center justify-content-center">
+           <a href="doc/CvAl.pdf"  class="btn btn-danger">Télecharger cv</a>
+        </div> 
+    </div>
   </section>
-
+  
+  
 <!--Section Formation-->
-    <section id="formation" class="py-5 m-5">
+  <section id="formation" class="py-5 m-5">
+  <div class="divider mx-auto mb-5"></div>
       <div class="heading py-2 mb-3">
        <h2>Formation</h2>
       </div>
 
       <div class="row row-cols-1 row-cols-md-3 g-5 p-5">
         <div class="col">
-        <div class="card formation-block pt-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-award mx-auto" viewBox="0 0 16 16">
-            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
-            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-          </svg>
+        <div class="card h-100 formation-block pt-3">
+        <div class="badge"><span class="bi bi-award mx-auto"></span></div>
             <div class="card-body">
               <h5 class="card-title">1995-1998</h5>
               <div class="card-text">
@@ -277,11 +296,8 @@
           </div>
         </div>
         <div class="col">
-          <div class="card formation-block pt-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-award mx-auto" viewBox="0 0 16 16">
-            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
-            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-          </svg>
+          <div class="card h-100 formation-block pt-3">
+          <div class="badge"><span class="bi bi-award mx-auto"></span></div>
             <div class="card-body">
               <h5 class="card-title">2000-2003</h5>
               <div class="card-text">
@@ -292,11 +308,8 @@
           </div>
         </div>
         <div class="col">
-          <div class="card formation-block pt-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-award mx-auto" viewBox="0 0 16 16">
-            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
-            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-          </svg>
+          <div class="card h-100 formation-block pt-3">
+            <div class="badge"><span class="bi bi-award mx-auto"></span></div>
             <div class="card-body">
               <h5 class="card-title">2022-2024</h5>
               <div class="card-text">
@@ -308,23 +321,24 @@
         </div>
       </div>
     </section>
+    <div class="divider mx-auto mt-5"></div>
 
 <!--Section Portfolio -->
     <section id="portfolio" class="py-4 px-3 m-5">
-        <div class="heading py-2 mb-3">
+        <div class="heading py-2 mb-5">
           <h2>portfolio</h2>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-3 p-3 projet">
           <div class="col">
             <div class="card h-100 text-center">
               <img src="img/jsexo1.png" class="card-img-top w-100 mt-5" alt="Interface projet">
               <div class="card-body">
                 <h5 class="card-title">JS-se perfectionner- projet n°1</h5>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-around flex-wrap">
                   <a href="./projects/JS02-01-267776-Attar-Latifa/NoteMusicJs/consigne/Se-perfectionner-en-javaScript-devoir1.pdf" 
-                  class="button p-2">Consigne</a>
-                  <a href="./projects/JS02-01-267776-Attar-Latifa/NoteMusicJs/index.html" class="button p-2">Mon projet</a>
+                  class="button p-2 mb-2">Consigne</a>
+                  <a href="./projects/JS02-01-267776-Attar-Latifa/NoteMusicJs/index.html" class="button p-2 mb-2">Mon projet</a>
                 </div>
               
               </div>
@@ -335,9 +349,9 @@
               <img src="img/jsex2.png" class="card-img-top w-100 mt-5" alt="Interface projet">
               <div class="card-body">
                 <h5 class="card-title">JS-se perfectionner- projet n°2</h5>
-                <div class="d-flex justify-content-between">
-                  <a href="./projects/JS02-02-267776-Attar-Latifa/consigne/Se-perfectionner-en-javaScript-devoir2.pdf" class="button p-2">Consigne</a>
-                  <a href="./projects/JS02-02-267776-Attar-Latifa/NoteMusicDemande1/index.php" class="button p-2">Mon projet</a>
+                <div class="d-flex justify-content-around flex-wrap">
+                  <a href="./projects/JS02-02-267776-Attar-Latifa/consigne/Se-perfectionner-en-javaScript-devoir2.pdf" class="button p-2 mb-2">Consigne</a>
+                  <a href="./projects/JS02-02-267776-Attar-Latifa/NoteMusicDemande1/index.php" class="button p-2 mb-2">Mon projet</a>
                 </div>   
               </div>
             </div>
@@ -348,10 +362,10 @@
               <img src="img/php1.png" class="card-img-top w-100" alt="Interface projet">
               <div class="card-body">
                 <h5 class="card-title">PHP-expert-projet n°1</h5>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-around flex-wrap">
                   <a href="./projects/PHP-ex-01-267776-Attar-Latifa/schoolPupilSport/consigne/php-expert-devoir1.pdf" 
-                  class="button p-2">Consigne</a>
-                  <a href="./projects/PHP-ex-01-267776-Attar-Latifa/schoolPupilSport/index.php" class="button p-2">Mon projet</a>
+                  class="button p-2 mb-2">Consigne</a>
+                  <a href="./projects/PHP-ex-01-267776-Attar-Latifa/schoolPupilSport/index.php" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
@@ -362,10 +376,10 @@
               <img src="img/phpex2.png" class="card-img-top w-100 p-3" alt="Interface projet">
               <div class="card-body">
                 <h5 class="card-title">PHP-expert-projet n°2</h5>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-around flex-wrap">
                   <a href="./projects/PHP-ex-02-267776-Attar-Latifa//ApplicationBooking/consigne/php-expert-devoir2.pdf" 
-                  class="button p-2">Consigne</a>
-                  <a href="./projects/PHP-ex-02-267776-Attar-Latifa/ApplicationBooking/index.php" class="button p-2">Mon projet</a>
+                  class="button p-2 mb-2">Consigne</a>
+                  <a href="./projects/PHP-ex-02-267776-Attar-Latifa/ApplicationBooking/index.php" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
@@ -376,9 +390,9 @@
               <img src="img/angular.png" class="card-img-top w-100 p-3" alt="Interface projet">
               <div class="card-body">
                 <h5 class="card-title">Créer une application Angular</h5>
-                <div class="d-flex justify-content-between">
-                  <a href="./projects/myAngularApp/consigne/application-angular.pdf" class="button p-2">Consigne</a>
-                  <a href="./projects/myAngularApp/src/app/app.component.html" class="button p-2">Mon projet</a>
+                <div class="d-flex justify-content-around flex-wrap">
+                  <a href="./projects/myAngularApp/consigne/application-angular.pdf" class="button p-2 mb-2">Consigne</a>
+                  <a href="./projects/myAngularApp/src/app/" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
@@ -389,18 +403,20 @@
               <img src="img/api-rest.png" class="card-img-top w-100 p-3" alt="Interface projet">
               <div class="card-body">
                 <h5 class="card-title">Dévelloper une API</h5>
-                <div class="d-flex justify-content-between">
-                  <a href="./projects/recettes_api/consigne/developper-api.pdf" class="button p-2">Consigne</a>
-                  <a href="./projects/recettes_api/index.php" class="button p-2">Mon projet</a>
+                <div class="d-flex justify-content-around flex-wrap">
+                  <a href="./projects/recettes_api/consigne/developper-api.pdf" class="button p-2 mb-2">Consigne</a>
+                  <a href="./projects/recettes_api/index.php" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
     </section>
+    
 
 <!--Section Recommandations -->
     <section id="recommendations" class="py-5 px-3 m-5">
+    <div class="divider mx-auto mb-5"></div>
         <div class="heading py-2 mb-3">
             <h2>recommandations</h2>
         </div>
@@ -426,6 +442,7 @@
           </div>
         </div>
       </section>
+      <div class="divider mx-auto mt-5"></div>
 
 <!--Section Contact -->
       <section id="contact" class="p-5 m-5">
@@ -498,10 +515,9 @@
       
 <!--Footer-->
 <footer class="text-center py-3">
-      <a href="#about"><svg xmlns="http://www.w3.org/2000/svg" width="53" height="33" fill="currentColor" class="bi bi-chevron-bar-up" viewBox="0 0 16 16">
-       <path fill-rule="evenodd" d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zM2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4z"/>
-     </svg></a>
-     <h5>Haut de la page</h5>
+      <a href="#about">
+        <span class="bi bi-chevron-double-up p-1"></span></a>
+     <h5 class="mt-3">Haut de la page</h5>
      <p class="copy">&copy; 2024-Latifa Attar</p>
 
 <!--CDN JS-->
