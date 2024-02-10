@@ -1,8 +1,9 @@
 <?php
-   $firstname = $name = $email = $phone = $message = "";
-   $firstnameError = $nameError = $emailError = $phoneError = $messageError = "";
+
+   $firstname = $name = $email = $phone = $message = '';
+   $firstnameError = $nameError = $emailError = $phoneError = $messageError = '';
    $isSuccess = false;
-   $emailTo = "nefer_titi.57@hotmail.fr";
+   $emailTo = 'nefer_titi.57@hotmail.fr';
 
    ///////////////////////////////////////////////////////
    ///                   Sécurité                    ////
@@ -15,49 +16,41 @@
        $phone = verifyInput($_POST['phone']);
        $message = verifyInput($_POST['message']);
        $isSuccess = true;
-       $emailText = "";
+       $emailText = '';
 
       if(empty($firstname)){
-          $firstnameError = "Donnez moi votre prénom, s\'il vous plâit !";
+          $firstnameError = 'Donnez moi votre prénom, s\'il vous plâit !';
           $isSuccess = false;
       }else
-        $emailText .= "Prénom: $firstname\n";
+        $emailText .= "firstname: $firstname\n";
       
 
       if(empty($name)){
-        $nameError = "Donnez moi votre nom, s\'il vous plâit !";
+        $nameError = 'Donnez moi votre nom, s\'il vous plâit !';
         $isSuccess = false;
-      }else{
-        $emailText .= "Nom: $name\n";
-      }
-      
+      }else
+      $emailText .= "name: $name\n";
  
       if(!isEmail($email)){
-        $emailError = "Donnez moi un email correct, s\'il vous plâit !";
+        $emailError = 'Donnez moi un email correct, s\'il vous plâit !';
         $isSuccess = false;
-      }else{
-        $emailText .= "email: $email\n";
-      }
-      
+      }else
+      $emailText .= "email: $email\n";
 
       if(!isPhone($phone)){
-        $phoneError = "Donnez moi votre numéro de télephone composé de chiffre et espace, s\'il vous plâit !";
+        $phoneError = 'Donnez moi votre numéro de télephone composé de chiffre et espace, s\'il vous plâit !';
         $isSuccess = false;
-      }else{
-        $emailText .= "Télephone: $phone\n";
-      }
-    
+      }else
+      $emailText .= "phone: $phone\n";
+
       if(empty($message)){
-        $messageError = "Laissez moi un message, s'il vous plâit !";
+        $messageError = 'Laissez moi un message, s\'il vous plâit !';
         $isSuccess = false;
-      }else{
-        $emailText .= "message: $message\n";
-      }
-      
+      }else
+      $emailText .= "message: $message\n";
 
       if($isSuccess){
-          $headers = "From:  $firstname $name <$email>\r\nReply-To: $email";
-          $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+          $headers = "From: $firstname $name <$email>\r\nReply-To: $email";
           mail($emailTo, "Un message de votre site", $emailText, $headers);
           $firstname = $name = $email = $phone = $message = '';
       }
@@ -106,7 +99,7 @@
 
 <!--NavBar -->
 
-  <nav id="myNavbar" class="navbar navbar-expand-lg sticky-top">
+  <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" 
       aria-expanded="false" aria-label="Toggle navigation">
@@ -347,8 +340,8 @@
               <div class="card-body">
                 <h5 class="card-title">JS-se perfectionner- projet n°1</h5>
                 <div class="d-flex justify-content-around flex-wrap">
-                  <a tabindex="9" href="./doc/consigne/Se-perfectionner-en-javaScript-devoir2.pdf" class="button p-2 mb-2">Consigne</a>
-                  <a tabindex="10" href="https://notedemusic1.lati.compteweb.com/" target="_blank" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="9" href="./doc/consigne/Se perfectionner en javaScript-devoir1.pdf" class="button p-2 mb-2">Consigne</a>
+                  <a tabindex="10" href="" class="button p-2 mb-2">Mon projet</a>
                 </div>
               
               </div>
@@ -361,7 +354,7 @@
                 <h5 class="card-title">JS-se perfectionner- projet n°2</h5>
                 <div class="d-flex justify-content-around flex-wrap">
                   <a tabindex="11" href="./doc/consigne/Se-perfectionner-en-javaScript-devoir2.pdf" class="button p-2 mb-2">Consigne</a>
-                  <a tabindex="12" href="https://notedemusic2.lati.compteweb.com/" target="_blank" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="12" href="" class="button p-2 mb-2">Mon projet</a>
                 </div>   
               </div>
             </div>
@@ -374,7 +367,7 @@
                 <h5 class="card-title">PHP-expert-projet n°1</h5>
                 <div class="d-flex justify-content-around flex-wrap">
                   <a tabindex="13" href="./doc/consigne/php-expert-devoir1.pdf" class="button p-2 mb-2">Consigne</a>
-                  <a tabindex="14" href="https://schoolpupilsport.lati.compteweb.com" target="_blank" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="14" href="" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
@@ -387,7 +380,7 @@
                 <h5 class="card-title">PHP-expert-projet n°2</h5>
                 <div class="d-flex justify-content-around flex-wrap">
                   <a tabindex="15" href="./doc/consigne/php-expert-devoir2.pdf" class="button p-2 mb-2">Consigne</a>
-                  <a tabindex="16" href="https://appbooking.lati.compteweb.com" target="_blank" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="16" href="" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
@@ -400,7 +393,7 @@
                 <h5 class="card-title">Créer une application Angular</h5>
                 <div class="d-flex justify-content-around flex-wrap">
                   <a tabindex="17" href="./doc/consigne/application-angular.pdf" class="button p-2 mb-2">Consigne</a>
-                  <a tabindex="18" href="https://angularapp.lati.compteweb.com" target="_blank" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="18" href="" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
@@ -412,8 +405,8 @@
               <div class="card-body">
                 <h5 class="card-title">Dévelloper une API</h5>
                 <div class="d-flex justify-content-around flex-wrap">
-                  <a tabindex="19" href="./projects/recettes_api/consigne/developper-api.pdf" target="_blank" class="button p-2 mb-2">Consigne</a>
-                  <a tabindex="20" href="https://api.lati.compteweb.com" class="button p-2 mb-2">Mon projet</a>
+                  <a tabindex="19" href="./doc/consigne/developper-api.pdf" class="button p-2 mb-2">Consigne</a>
+                  <a tabindex="20" href="" class="button p-2 mb-2">Mon projet</a>
                 </div>
               </div>
             </div>
