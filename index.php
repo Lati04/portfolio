@@ -141,9 +141,9 @@
   </nav>
 
 <!--Section about me -->
-  <section id="about">
+  <section id="about" class="sparkle-bg">
     <div class="container-fluid p-5">
-      <div class="d-flex align-items-center justify-content-around p-5 my-4 content">
+      <div class="d-flex align-items-center justify-content-around p-5 my-4 content box">
           <div class="heading p-2 me-2">
             <h2>Bonjour, Je suis Latifa</h2>
             <h3>Développeur Web</h3>
@@ -213,7 +213,7 @@
          <h2>Expérience Professionnelle</h2>
     </div>
 
- 
+    
       <ul class="timeline px-1 py-3">
         <li>
           <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
@@ -226,7 +226,7 @@
               <div class="timeline-body">
               <div class="clearfix">
                 <figure class="col-md-4 float-md-start me-md-3">
-                  <img src="img/image-ide.jpg" class="img-fluid" alt="ide">
+                  <img src="img/ideimg.jpg" class="img-fluid" alt="ide">
                   <figcaption>Infirmière Diplomée d'Etat</figcaption>
                 </figure>
                 <p>Ayant acquis une solide expérience dans le domaine de la santé en tant qu’infirmière 
@@ -254,7 +254,7 @@
                 <div class="timeline-body">
                 <div class="clearfix">
                   <figure class="col-md-4 float-md-end ms-md-3">
-                    <img src="img/image-dev-web.png" class="img-fluid" alt="développeur">
+                    <img src="img/devimg.jpg" class="img-fluid" alt="développeur">
                     <figcaption>Développeur Web</figcaption>
                   </figure>
                   <p>Je souhaite désormais orienter ma carrière vers le domaine du développement web, 
@@ -334,16 +334,16 @@
    
 
 <!--Section Portfolio -->
-    <section id="portfolio" class="p-5 my-3">
+    <section id="portfolio" class="sparkle-bg p-5 my-3">
     <div class="divider mx-auto mb-5"></div>
         <div class="heading py-2 mb-5">
           <h2>portfolio</h2>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4 m-3 px-5 py-3 projet">
+        <div class="row row-cols-1 row-cols-md-3 g-5 mx-3 projet">
           <div class="col">
             <div class="card h-100 text-center">
-              <img src="img/jsexo1.png" class="card-img-top w-100 mt-5" alt="Interface projet">
+              <img src="img/jsexo1.png" class="card-img-top w-100 p-3" alt="Interface projet">
               <div class="card-body">
                 <h5 class="card-title">JS-se perfectionner- projet n°1</h5>
                 <div class="d-flex justify-content-around flex-wrap">
@@ -356,7 +356,7 @@
           </div>
           <div class="col">
             <div class="card h-100 text-center">
-              <img src="img/jsex2.png" class="card-img-top w-100 mt-5" alt="Interface projet">
+              <img src="img/jsex2.png" class="card-img-top w-100 p-3" alt="Interface projet">
               <div class="card-body">
                 <h5 class="card-title">JS-se perfectionner- projet n°2</h5>
                 <div class="d-flex justify-content-around flex-wrap">
@@ -369,8 +369,8 @@
         
           <div class="col">
             <div class="card h-100 text-center">
-              <img src="img/php1.png" class="card-img-top w-100" alt="Interface projet">
-              <div class="card-body">
+              <img src="img/php1.png" class="card-img-top w-100 px-3" alt="Interface projet">
+              <div class="card-body"> 
                 <h5 class="card-title">PHP-expert-projet n°1</h5>
                 <div class="d-flex justify-content-around flex-wrap">
                   <a tabindex="13" href="./doc/consigne/php-expert-devoir1.pdf" class="button p-2 mb-2">Consigne</a>
@@ -463,7 +463,7 @@
 
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>#contact">
+            <form id="contact-form" class="contact p-3" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>#contact">
 
               <div class="row">
                 <div class="col-md-6 p-3">

@@ -1,7 +1,6 @@
 /********************************** GENERAL ****************************************/
 body{
      font-family: Arial, Helvetica, sans-serif;
-     /* background: linear-gradient(to left,  #333,   #000);  */
 }
 *{
       margin: 0;
@@ -11,8 +10,8 @@ body{
 h1, h2, h3, h4, h5, h6{
      font-weight: bold;
 }
-#about h3, #expérience h4, #recommendations h3{
-      color:  rgb(252, 73, 73);
+#about h3, #expérience h4, #formation h4, #recommendations h3{
+      color: #f00;
 }
 ul{
       list-style: none;
@@ -24,15 +23,15 @@ ul{
 .divider.black{
       border: 1px solid #000;
 }
-.navbar, .content, .timeline li .timeline-badge, .projet, .timeline-panel{
+.navbar, .content, .timeline li .timeline-badge, .projet .card, .timeline-panel{
       box-shadow: 
       0 0 5vw #000,
       0 0 1vw 0.1vw #fff,
       inset 0 0 .5vw .1vw #fff;
 }
-section .heading, #formation .formation-block{
+section .heading, .navbar, #about, #formation .formation-block, #expérience, #portfolio{
       text-align: center;
-      background: linear-gradient(to right,  #333,   #000);
+      background: radial-gradient(closest-side,#000, #333, #000);
    
 }
 section .heading h2{
@@ -49,20 +48,18 @@ a:focus, .nav-link:focus, .form-control:focus, .btn:focus, button:focus{
       outline-offset: 4px;
 }
 .button{
-      background: #fd3f92;
+      background: #f00;
       color: #fff;
       text-transform: uppercase;
       font-weight: bold;
       text-decoration: none;
-      box-shadow: 
-      inset 0 0 .2vw .1vw #fff;
+      border: none;
  }
 .button:hover{
-      background: #f00;
+      background: linear-gradient(to right,  #333,   #000);
 }
 /************************************ NAVBAR**********************************/
 .navbar{
-      background: linear-gradient(to right,  #333,   #000);
       letter-spacing: 2px;
       text-transform: uppercase;
       font-weight: bold;
@@ -75,7 +72,7 @@ a:focus, .nav-link:focus, .form-control:focus, .btn:focus, button:focus{
 .navbar-toggler {
       border: none;
       color: #333;
-      background: linear-gradient(to right,  #525252,   #fff);
+      background: linear-gradient(to right,  #000, #f00);
 }
 .nav-link{
       background-color: #fff;
@@ -92,19 +89,12 @@ a:focus, .nav-link:focus, .form-control:focus, .btn:focus, button:focus{
      font-weight: bold;
 }
 .nav-link:hover{ 
-     background-color:  rgb(252, 73, 73);
+     background-color:  #f00;
      color: #000 !important;
      font-weight: bold;
-     outline-color:  rgb(252, 73, 73);
+     outline-color: #f00;
 }
-.navbar a:hover{
-      color:  rgb(252, 73, 73);
-}
-
 /************************************ ABOUT *******************************/
-#about{
-      background: linear-gradient(to left,  #333,   #000);
-}
 .content{
      position: relative;
      overflow: hidden;
@@ -139,7 +129,6 @@ a:focus, .nav-link:focus, .form-control:focus, .btn:focus, button:focus{
 .img-fluid{
 border-radius: 7px;
 }
-
 /**************************************** SKILLS **************************************/
 #skills .progress{
       height: 40px;
@@ -147,17 +136,14 @@ border-radius: 7px;
 
 #skills .progress-bar{
       background: radial-gradient(closest-side,#f00, #ebf8e1, rgb(252, 73, 73));
-      /* background-color:  rgb(252, 73, 73); */
+  
 }
 #skills .progress-bar h5{
       text-shadow: 1px 1px 1px #fff;
       color: #000;
 }
 
-/************************************** EXPERIANCE ***********************************/
-#expérience{
-      background: linear-gradient(to left,  #333,   #000); 
-}
+/************************************** EXPERIENCE ***********************************/
 #expérience .heading h2{
       color: #fff;
 }
@@ -186,7 +172,7 @@ border-radius: 7px;
       clear: both;
 }
 .timeline li .timeline-badge{
-      color: #fff;
+      color: #f00;
       width: 45px;
       line-height: 50px;
       font-size: 20px;
@@ -201,6 +187,7 @@ border-radius: 7px;
 .timeline-panel-container{
       width: 50%;
       float: left;
+      
 }
 .timeline-panel-container-inverted{
       width: 50%;
@@ -215,11 +202,26 @@ border-radius: 7px;
       padding: 20px 10px;
       position: relative;
       color: #fff;
+      backdrop-filter: blur(20px);
+      background: transparent;
+      transition: all 0.5s ease;
+}
+.timeline-panel:hover{
+      background: linear-gradient(#000, #f00);
+      border: 1px solid rgb(253, 9, 9, .5);
+      box-shadow: 
+      0 0 5vw #000,
+      0 0 1vw 0.1vw #f00,
+      inset 0 0 .5vw .1vw #f00;
 }
 .timeline-panel-container-inverted .timeline-panel{
       float: left;
       margin-left: 34px;
-     
+      backdrop-filter: blur(20px);
+      background: transparent;
+}
+.timeline-panel-container-inverted .timeline-panel:hover{
+      background: linear-gradient(#000, #f00);
 }
 .timeline-panel:after{
       position: absolute;
@@ -249,11 +251,15 @@ figcaption{
 }
 
 /************************************* FORMATION *******************************/
-#formation h3, #formation h5 {
-     color: #fff;
+#formation .formation-block{
+      transition: all 0.5s ease;
 }
-#formation .formation-block h4{
-      color:  rgb(252, 73, 73)
+#formation .formation-block:hover{
+      background: linear-gradient(#f00, #000);
+      border: none;
+}
+#formation h3, #formation h5 {
+      color: #fff;
 }
 .badge span{
       box-shadow: 0 0 5px #fff;
@@ -261,8 +267,23 @@ figcaption{
 }
 
 /************************************* PORTFOLIO ********************************/
-#portfolio{
-      background: linear-gradient(to left,  #333,   #000); 
+#portfolio .card{
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, .5);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      transition: all 0.5s ease;
+}
+#portfolio .card:hover{
+      background: linear-gradient(#f00, #000);
+      border: 1px solid rgb(253, 9, 9, .5);
+      box-shadow: 
+      0 0 5vw #000,
+      0 0 1vw 0.1vw #f00,
+      inset 0 0 .5vw .1vw #f00;
+}
+#portfolio .card h5{
+      color: #fff;
 }
 /************************************* RECOMMENDATION *****************************/
 .carousel-inner{
@@ -274,12 +295,18 @@ figcaption{
 
 /************************************** CONTACTEZ-MOI ******************************/
 #contact{
-      background: linear-gradient(to left,  #333,   #000); 
+      background: url(../img/bgpink.jpg) no-repeat;
+      background-size: cover; 
+      background-position: center;
 }
 #contact-form{
        font-size: 16px;
        border-radius: 10px;
        color: #fff;
+       border: 1px solid rgba(255, 255, 255, .5);
+       border-radius: 20px;
+       backdrop-filter: blur(10px);
+       background: transparent;
 }
 form .blue{
         color: #f00;
@@ -287,6 +314,7 @@ form .blue{
 form .form-control{
        height: 50px;
        font-size: 16px;
+     
 }
 form .btn{
      text-transform: uppercase;
