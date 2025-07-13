@@ -362,7 +362,7 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
   </ul>
 
   <div class="d-flex align-items-center justify-content-center mt-4">
-    <a tabindex="10" href="doc/dwwm_cv_AttarLatifa.pdf" target="_blank" class="btn btn-pdf m-3">
+    <a tabindex="10" href="doc/latifa-attar-cv-dwwm.pdf" target="_blank" class="btn btn-pdf m-3">
       <i class="fas fa-download me-1" style="color: #fff;"></i>Télécharger le CV</a>
   </div>
   
