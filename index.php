@@ -52,8 +52,10 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Ton style -->
+  <!-- style -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
 </head>
 
 <body>
@@ -155,43 +157,50 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
       <!-- Gauche : barres de compétences -->
       <div class="col">
         <div class="progress mb-3">
-          <div class="progress-bar skill-bar" role="progressbar" data-skill="100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-            <h6>HTML 100%</h6>
+          <div class="progress-bar skill-bar" role="progressbar" data-skill="90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Compétence HTML à 90%">
+            <i class="devicon-html5-plain-wordmark icon-skillpg" style="font-size: 38px;"></i>
           </div>
         </div>
+          
         <div class="progress mb-3">
-          <div class="progress-bar skill-bar" role="progressbar" data-skill="100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-            <h6>CSS 100%</h6>
+          <div class="progress-bar skill-bar" role="progressbar" data-skill="90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Compétence CSS à 90%">
+            <i class="devicon-css3-plain-wordmark icon-skillpg" style="font-size: 38px;"></i>
           </div>
         </div>
+          
         <div class="progress mb-3">
-          <div class="progress-bar skill-bar" role="progressbar" data-skill="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-            <h6>JAVASCRIPT 90%</h6>
+          <div class="progress-bar skill-bar" role="progressbar" data-skill="80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Compétence JavaScript à 80%">
+            <i class="devicon-javascript-plain icon-skillpg" style="font-size: 32px;"></i>
           </div>
         </div>
+          
         <div class="progress mb-3">
-          <div class="progress-bar skill-bar" role="progressbar" data-skill="80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-            <h6>PYTHON 80%</h6>
+          <div class="progress-bar skill-bar" role="progressbar" data-skill="75%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Compétence Python à 75%">
+            <i class="devicon-python-plain-wordmark icon-skillpg" style="font-size: 38px;"></i>
           </div>
         </div>
+          
         <div class="progress mb-3">
-          <div class="progress-bar skill-bar" role="progressbar" data-skill="80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-            <h6>ANGULAR 80%</h6>
+          <div class="progress-bar skill-bar" role="progressbar" data-skill="75%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Compétence Angular à 75%">
+            <i class="devicon-angular-plain icon-skillpg" style="font-size: 38px;"></i>
           </div>
         </div>
+
         <div class="progress mb-3">
-          <div class="progress-bar skill-bar" role="progressbar" data-skill="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-            <h6>BOOTSTRAP 90%</h6>
+          <div class="progress-bar skill-bar" role="progressbar" data-skill="85%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Compétence Bootstrap à 85%">
+            <i class="devicon-bootstrap-plain-wordmark icon-skillpg" style="font-size: 38px;"></i>
           </div>
         </div>
+
         <div class="progress mb-3">
-          <div class="progress-bar skill-bar" role="progressbar" data-skill="80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-            <h6>SYMFONY 80%</h6>
+          <div class="progress-bar skill-bar" role="progressbar" data-skill="75%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Compétence Symfony à 80%">
+            <i class="devicon-symfony-original-wordmark icon-skillpg" style="font-size: 38px;"></i>
           </div>
         </div>
+
         <div class="progress mb-3">
-          <div class="progress-bar skill-bar" role="progressbar" data-skill="80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-            <h6>REACT NATIVE 80%</h6>
+          <div class="progress-bar skill-bar" role="progressbar" data-skill="75%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Compétence React à 75%">
+            <i class="devicon-react-original-wordmark icon-skillpg" style="font-size: 38px;"></i>
           </div>
         </div>
       </div>
@@ -200,78 +209,122 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
     <div class="col">
       <div class="row row-cols-1 g-3">
         <div class="col skills-item hidden-on-load">
-          <div class="card h-80 p-1">
+          <div class="card h-80 pt-2">
             <h5 class="card-title">Base de données & API</h5>
-            <ul class="card-text">
-              <li>MySQL, Prisma</li>
-              <li>REST, GraphQL</li>
+            <ul class="card-text px-2">
+              <li class="d-flex justify-content-around align-items-center w-100">
+                <i class="devicon-mysql-plain-wordmark icon-skill" style="font-size: 50px;" aria-hidden="true"></i>
+                <i class="devicon-prisma-original icon-skill" style="font-size: 45px;" aria-hidden="true"></i>
+                <img src="img/api.svg" class="icon-skill" style="height: 45px;" alt="API" title="API">
+                <i class="devicon-graphql-plain-wordmark icon-skill" style="font-size: 48px;" aria-hidden="true"></i>
+              </li>
             </ul>
           </div>
         </div>
+        
         <div class="col skills-item hidden-on-load">
-          <div class="card h-80 p-1">
+          <div class="card h-80 p-2">
             <h5 class="card-title">Outils de développement</h5>
-            <ul class="card-text">
-              <li>GitHub, Jira</li>
-              <li>VS Code, WebStorm</li>
-              <li>Docker, WordPress</li>
+            <ul class="card-text px-2">
+              <li class="d-flex justify-content-around align-items-center w-100">
+                <i class="devicon-github-original icon-skill" style="font-size: 40px;" aria-hidden="true"></i> 
+                <i class="devicon-jira-plain-wordmark icon-skill" style="font-size: 40px;" aria-hidden="true"></i>
+                <i class="devicon-vscode-plain icon-skill" style="font-size: 40px;" aria-hidden="true"></i>
+                <i class="devicon-webstorm-plain icon-skill" style="font-size: 40px;" aria-hidden="true"></i>
+                <i class="devicon-docker-plain icon-skill" style="font-size: 40px;" aria-hidden="true"></i>
+                <i class="devicon-wordpress-plain icon-skill" style="font-size: 40px;" aria-hidden="true"></i>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="col skills-item hidden-on-load">
-          <div class="card h-80 p-1">
-            <h5 class="card-title">Design & UX/UI</h5>
-            <ul class="card-text">
-              <li>Figma (prototypage interactif)</li>
-              <li>Intégration responsive, accessibilité numérique</li>
-            </ul>
-          </div>
+
+      <div class="col skills-item hidden-on-load">
+        <div class="card h-80 p-2">
+          <h5 class="card-title">Design & UX/UI</h5>
+          <ul class="card-text px-2">
+            <li class="d-flex justify-content-around align-items-center w-100">
+              <i class="devicon-figma-plain icon-skill" style="font-size: 48px;" aria-hidden="true"></i>
+              <img src="img/responsive.svg" class="icon-skill" style="height: 42px;" alt="Responsive" title="Responsive">
+              <i class="devicon-html5-plain-wordmark icon-skill" style="font-size: 45px;" title="HTML5" aria-hidden="true"></i>
+              <i class="devicon-css3-plain-wordmark icon-skill" style="font-size: 45px;" title="CSS3" aria-hidden="true"></i>
+              <img src="img/accessibility.svg" class="icon-skill" style="height: 45px;" alt="Accessibilité" title="Accessibilité">
+            </li>
+          </ul>
         </div>
-        <div class="col skills-item hidden-on-load">
-          <div class="card h-80 p-1">
-            <h5 class="card-title">Méthodes & qualité</h5>
-            <ul class="card-text">
-              <li>SEO, sécurité, veille technologique</li>
-              <li>Documentation projet, méthodes agiles</li>
-            </ul>
-          </div>
+      </div>
+
+      <div class="col skills-item hidden-on-load">
+        <div class="card h-80 p-2">
+          <h5 class="card-title">Méthodes & qualité</h5>
+          <ul class="card-text px-2">
+            <li class="d-flex justify-content-around align-items-center w-100">
+              <i class="devicon-google-plain icon-skill" style="font-size: 42px;" title="SEO" aria-hidden="true"></i>
+              <i class="devicon-linux-plain icon-skill" style="font-size: 42px;" title="Sécurité Serveur" aria-hidden="true"></i>
+              <img src="img/veille.svg" class="icon-skill" style="height: 40px;" alt="Veille" title="Veille technologique">
+              <i class="devicon-markdown-original icon-skill" style="font-size: 50px;" title="Documentation" aria-hidden="true"></i>
+              <img src="img/agile.svg" class="icon-skill" style="height: 42px;" alt="Méthode Agile" title="Méthodes agiles" aria-hidden="true">
+            </li>
+          </ul>
         </div>
+      </div>
+
       </div>
     </div>
 
     <!-- Colonne 3 : Soft Skills -->
     <div class="col">
       <div class="row row-cols-1 g-3">
+
+        <!-- Leadership naturel -->
         <div class="col skills-item hidden-on-load">
-          <div class="card h-80 p-1">
-            <h5 class="card-title">Leadership naturel</h5>
-            <p class="card-text">Coordination d’équipes pendant la crise COVID, continuité des soins assurée.</p>
+          <div class="card h-80 p-2">
+            <div class="d-flex justify-content-center align-items-center w-100">
+              <img src="img/leadership.svg" class="icon-skill me-2" alt="Leadership" title="Leadership naturel" style="height: 56px;" >
+              <h5 class="card-title mb-0">Leadership naturel</h5>
+            </div>
           </div>
         </div>
+
+        <!-- Résolution de problèmes -->
         <div class="col skills-item hidden-on-load">
-          <div class="card h-80 p-1">
-            <h5 class="card-title">Résolution de problèmes</h5>
-            <p class="card-text">Débogage structuré, soutien technique aux stagiaires.</p>
+          <div class="card h-80 p-2">
+            <div class="d-flex justify-content-center align-items-center w-100">
+              <img src="img/bug.svg" class="icon-skill me-2" alt="Résolution de problèmes" title="Résolution de problèmes" style="height: 56px;">
+              <h5 class="card-title mb-0">Résolution de problèmes</h5>
+            </div>
           </div>
         </div>
+
+        <!-- Force de proposition & agilité -->
         <div class="col skills-item hidden-on-load">
-          <div class="card h-80 p-1">
-            <h5 class="card-title">Force de proposition & agilité</h5>
-            <p class="card-text">Refonte UX/UI proactive pour améliorer les maquettes.</p>
+          <div class="card h-80 p-2">
+            <div class="d-flex justify-content-center align-items-center w-100">
+              <img src="img/agility.svg" class="icon-skill me-2" alt="Agilité" title="Force de proposition & agilité" style="height: 56px;">
+              <h5 class="card-title mb-0">Force de proposition & agilité</h5>
+            </div>
           </div>
         </div>
+
+        <!-- Apprentissage & réactivité -->
         <div class="col skills-item hidden-on-load">
-          <div class="card h-80 p-1">
-            <h5 class="card-title">Apprentissage & réactivité</h5>
-            <p class="card-text">Montée en compétence rapide sur React, GraphQL, livrables à chaque sprint.</p>
+          <div class="card h-80 p-2">
+            <div class="d-flex justify-content-center align-items-center w-100">
+              <img src="img/learning.svg" class="icon-skill me-2" alt="Apprentissage" title="Apprentissage & réactivité" style="height: 56px;">
+              <h5 class="card-title mb-0">Apprentissage & réactivité</h5>
+            </div>
           </div>
         </div>
+
+        <!-- Intelligence collective -->
         <div class="col skills-item hidden-on-load">
-          <div class="card h-80 p-1">
-            <h5 class="card-title">Intelligence collective</h5>
-            <p class="card-text">Scrum, dailys, sprint reviews, reporting quotidien.</p>
+          <div class="card h-80 p-2">
+            <div class="d-flex justify-content-center align-items-center w-100">
+              <img src="img/team.svg" class="icon-skill me-2" alt="Intelligence collective" title="Intelligence collective" style="height: 56px;">
+              <h5 class="card-title mb-0">Intelligence collective</h5>
+            </div>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -315,8 +368,8 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
                   <li class="timeline-item hidden-on-load"><strong>Développement front-end :</strong> React Native, TypeScript, navigation fluide multi-profils, logique métier robuste à partir de maquettes Figma.</li>
                   <li class="timeline-item hidden-on-load"><strong>Back-end industrialisé :</strong> NestJS, Prisma, GraphQL, MySQL, conteneurisation avec Docker.</li>
                   <li class="timeline-item hidden-on-load"><strong>Livraison validée :</strong> App testée sous Expo Go & Android Studio, validée par le client interne (qualité, autonomie, professionnalisme).</li>
-                  <li class="timeline-item hidden-on-load">
-                    <strong>🎥 Présentation Sprint  :</strong>
+                  <li class="timeline-item hidden-on-load bg-secondary text-center mt-3">
+                   <strong class="text-white"><i class="fa-solid fa-video"></i> Présentation Sprint :</strong>
                     <a tabindex="9" href="https://www.youtube.com/watch?v=NDXdAtQVaKE" target="_blank" rel="noopener noreferrer" class="lien">
                       Voir la vidéo sur YouTube
                     </a>
@@ -363,7 +416,7 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
 
   <div class="d-flex align-items-center justify-content-center mt-4">
     <a tabindex="10" href="doc/latifa-attar-cv-dwwm.pdf" target="_blank" class="btn btn-pdf m-3">
-      <i class="fas fa-download me-1" style="color: #fff;"></i>Télécharger le CV</a>
+      <i class="fas fa-download me-1"></i>Télécharger le CV</a>
   </div>
   
 </section>
@@ -574,7 +627,7 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
           <h3><i class="far fa-file me-1" style="color: #89a887;"></i>Relevé de notes</h3>
           <p>Validation complète de ma formation en développement web.</p>
           <a tabindex="25" href="doc/Releve_de_notes_-_267776-0.pdf" target="_blank" class="btn btn-pdf m-2">
-            <i class="fas fa-download me-1" style="color: #fff;"></i>Consulter le PDF
+            <i class="fas fa-download me-1"></i>Consulter le PDF
           </a>
         </div>
 
@@ -583,13 +636,13 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
           <h3>Présentations & Dossiers de projet</h3>
           <p>Consulter mon dossier Professionnel DWWM, mon dossier et support de présentation de projet Studee.</p>
           <a tabindex="26" href="doc/dossierprodwwm.pdf" target="_blank" class="btn btn-pdf m-2">
-            <i class="bi bi-folder-fill me-1" style="color: #fff;"></i>Dossier Professionnel
+            <i class="bi bi-folder-fill me-1"></i>Dossier Professionnel
           </a>
           <a tabindex="27" href="doc/dossierprojetstudee.pdf" target="_blank" class="btn btn-pdf m-2">
-            <i class="bi bi-folder-fill me-1" style="color: #fff;"></i>Dossier Projet Studee
+            <i class="bi bi-folder-fill me-1"></i>Dossier Projet Studee
           </a>
           <a tabindex="28" href="doc/supportprojetstudee.pdf" target="_blank" class="btn btn-pdf m-2">
-            <i class="fas fa-microphone me-1" style="color: #fff;"></i>Support Projet Studee
+            <i class="fas fa-microphone me-1"></i>Support Projet Studee
           </a>
         </div>
 
@@ -598,7 +651,7 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
           <h3><i class="far fa-file-alt me-1" style="color: #89a887;"></i>Lettre de recommandation</h3>
           <p>Retour positif de mon tuteur de stage sur mon implication et mes compétences.</p>
           <a tabindex="29" href="doc/Lettre recommandation Webdev - Latifa ATTAR (1).pdf" target="_blank" class="btn btn-pdf m-2">
-            <i class="fas fa-download me-1" style="color: #fff;"></i>Lire la lettre
+            <i class="fas fa-download me-1"></i>Lire la lettre
           </a>
         </div>
 
