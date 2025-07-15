@@ -10,10 +10,10 @@ body{
 h1, h2, h3, h4, h5, h6{
      font-weight: bold;
 }
-#experience h5, #formation h4, .carousel-inner ,  #formation h5{
+#experience h5, .carousel-inner,  #formation h5{
       color:  #2f3a32;
 }
-#experience h4, #formation .card-text h3, #recommendations h3, #skills h5{
+#experience h4, #formation .card-text h3, #recommendations h3, #skills h5, #formation h4{
       color: #89a88f;
 }
 #about h3{
@@ -97,9 +97,22 @@ section {
     }
     
 #contact {
-scroll-margin-top: 100px;
+      scroll-margin-top: 100px;
 }
-    
+@media (min-width: 992px) {
+ #skills, #experience, #formation, #portfolio, #recommendations, #contact, #about .container-fluid{
+    padding-left: 48px !important; 
+    padding-right: 48px !important;
+}   
+ #contact{
+      padding-top: 48px !important;
+      padding-bottom: 48px !important;
+ }
+ .timeline{
+      padding-left: 9px !important;
+      padding-right: 9px !important;
+ }
+}
 /************************************ NAVBAR**********************************/
 .navbar{
       letter-spacing: 2px;
@@ -157,7 +170,7 @@ scroll-margin-top: 100px;
       background-color: transparent;
 }
 .image img {
-      max-width: 250px; 
+      max-width: 200px; 
       width: 100%;      
       height: auto;
       opacity: 0;
@@ -280,12 +293,12 @@ color: #545454;
             font-size: 1.1rem;
           }
     }
-    .timeline {
+.timeline {
       position: relative;
       padding: 0;
       margin: 0;
       list-style: none;
-    }
+}
     
 .timeline:before {
       content: '';
@@ -446,7 +459,6 @@ text-decoration: underline;
       background: linear-gradient(#c1f190, #fff);
       border: none;
 }
-
 .badge span{
       color: #545454;
       background-color: #c1f190ff;
@@ -480,7 +492,7 @@ text-decoration: underline;
 /************************************* RECOMMENDATION *****************************/
 /* MOBILE FIRST */
 .carousel-inner {
-      min-height: 320px; 
+      min-height: 340px; 
     }
 @media (min-width: 576px) {
 .carousel-inner {

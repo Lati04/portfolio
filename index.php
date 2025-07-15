@@ -98,7 +98,7 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
 
   <section id="about" class="sparkle-bg">
   <div class="container-fluid py-5">
-    <div class="row align-items-center justify-content-around p-5 m-4 content box">
+    <div class="row align-items-center justify-content-around p-3 m-2 content box">
     <canvas id="networkCanvas"></canvas>
 
       <!-- Colonne photo -->
@@ -123,7 +123,7 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
           <span class="word">junior</span>
         </h3>
 
-        <p class="about-intro hidden-on-load mt-4 px-2">
+        <p class="about-intro hidden-on-load mt-4">
           Reconversion assumée, passion revendiquée. Ce qui ne change pas ? Mon envie d’apprendre, d’agir, de créer et de bien faire.
           <br>
           Curieux·se d’en savoir plus ? Je vous emmène avec moi.
@@ -148,7 +148,7 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
 
 
 <!--Section Compétences -->
-<section id="skills" class="px-5 pb-5">
+<section id="skills" class="px-3 pb-5">
   <div class="heading py-2 mb-5">
     <h2>Compétences</h2>
   </div>
@@ -337,12 +337,12 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
 </div>
 
 <!--Section experience-->
-<section id="experience" class="px-5 pb-5">
+<section id="experience" class="px-3 pb-5">
   <div class="heading py-2 mb-5">
     <h2>Expérience Professionnelle</h2>
   </div>
 
-  <ul class="timeline px-1 py-3">
+  <ul class="timeline px-4 py-3">
     <!-- Développeuse Full Stack -->
     <li>
       <div class="timeline-badge"><span class="bi-briefcase-fill"></span></div>
@@ -428,55 +428,55 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
 </div>
   
 <!--Section Formation-->
-<section id="formation" class="px-5 pb-5">
+<section id="formation" class="px-3 pb-5">
     <div class="heading py-2 mb-5">
       <h2>Formation</h2>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-4 g-5 py-3">
+    <div class="row row-cols-1 row-cols-md-4 g-5">
       <div class="col formation-item hidden-on-load">
-        <div class="card h-100 formation-block pt-3">
+        <div class="card h-100 formation-block pt-2">
           <div class="badge"><span class="bi bi-award mx-auto"></span></div>
-          <div class="card-body">
-            <h5 class="card-title">2024</h5>
+          <div class="card-body p-0">
+            <h6 class="card-title">2024</h6>
             <div class="card-text">
-                <h3>Développeur Web et web mobile</h3>
-                <h5>ESECAD Skill and you</h5>
+                <h4>Développeur Web et web mobile</h4>
+                <h5>Esecad Skill and You</h5>
             </div>
           </div>
         </div>
       </div>
       <div class="col formation-item hidden-on-load">
-        <div class="card h-100 formation-block pt-3">
+        <div class="card h-100 formation-block pt-2">
           <div class="badge"><span class="bi bi-award mx-auto"></span></div>
-          <div class="card-body">
-            <h5 class="card-title">2022</h5>
+          <div class="card-body p-0">
+            <h6 class="card-title">2022</h6>
             <div class="card-text">
-              <h3>Formation Management</h3>
+              <h4>Formation Management</h4>
                 <h5>École Française</h5>
             </div>
           </div>
         </div>
       </div>
       <div class="col formation-item hidden-on-load">
-        <div class="card h-100 formation-block pt-3">
+        <div class="card h-100 formation-block pt-2">
         <div class="badge"><span class="bi bi-award mx-auto"></span></div>
-          <div class="card-body">
-            <h5 class="card-title">2003</h5>
+          <div class="card-body p-0">
+            <h6 class="card-title">2003</h6>
             <div class="card-text">
-              <h3>Infirmière Diplomée d'Etat</h3>
+              <h4>Infirmière Diplomée d'Etat</h4>
               <h5>IFSI Clérmont-de-l'Oise</h5>
             </div>
           </div>
         </div>
       </div>
       <div class="col formation-item hidden-on-load">
-        <div class="card h-100 formation-block pt-3">
+        <div class="card h-100 formation-block pt-2">
         <div class="badge"><span class="bi bi-award mx-auto"></span></div>
-          <div class="card-body">
-            <h5 class="card-title">1998</h5>
+          <div class="card-body p-0">
+            <h6 class="card-title">1998</h6>
             <div class="card-text">
-                <h3>Baccalauréat Scientifique</h3>
+                <h4>Baccalauréat Scientifique</h4>
                 <h5>Lycée Saint-Exupéry-Fameck</h5>
             </div>
           </div>
@@ -492,7 +492,7 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
   </div>
 
 <!--Section Portfolio -->
-<section id="portfolio" class="px-5 pb-5">
+<section id="portfolio" class="px-3 pb-5">
     <div class="heading py-2 mb-5">
       <h2>portfolio</h2>
     </div>
@@ -612,7 +612,7 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
   </svg>
 </div>
 
-<section id="recommendations" class="px-5 pb-3">
+<section id="recommendations" class="px-3 pb-3">
   <div class="heading py-2 mb-5">
     <h2 class="text-center">Références & Recommandations</h2>
   </div>
@@ -675,11 +675,10 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
   </div>
 </section>
 
-
 <div class="divider black mx-auto mb-5"></div>
 
 <!-- Section Contact -->
-<section id="contact" class="p-5">
+<section id="contact" class="p-3">
     <div id="toast-container"  class="d-flex align-items-center justify-content-center mb-3">
           <?php if (isset($_GET['success']) && $justSubmitted): ?>
             <div class="custom-toast <?= $_GET['success'] == 1 ? 'success' : 'error' ?>" role="alert">
@@ -688,6 +687,7 @@ unset($_SESSION['inputs'], $_SESSION['errors'], $_SESSION['submitted']);
             </div>
           <?php endif; ?>
     </div>
+
   <div class="heading py-2 mb-5">
     <h2>Contactez-moi</h2>
   </div>
